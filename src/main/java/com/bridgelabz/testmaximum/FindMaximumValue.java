@@ -10,6 +10,10 @@ public class FindMaximumValue<E extends Comparable>  {
         return findMaximum(a);
     }
 
+    //Method to print the maximum value
+    public void printMax(E max){
+        System.out.println("The maximum value is "+max);
+    }
     // Method to find the maximum value
     public static <E extends Comparable> E findMaximum(E... a){
         E max=a[0];

@@ -11,6 +11,7 @@ class FindMaximumValueTest {
     public void findMaxIntegerAtFirstPos() {
         FindMaximumValue maximumValue = new FindMaximumValue(100, 70, 30);
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
         int expectedValue = 100;
         assertEquals(expectedValue, actualValue, "The maximum value is not correct! The Expected Value is " + expectedValue );
     }
@@ -19,6 +20,7 @@ class FindMaximumValueTest {
     public void findMaxIntegerAtSecondPos() {
         FindMaximumValue maximumValue = new FindMaximumValue(100, 700, 30);
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
         int expectedValue = 700;
         assertEquals(expectedValue, actualValue, "The maximum value is not correct! The Expected Value is " + expectedValue );
     }
@@ -27,6 +29,7 @@ class FindMaximumValueTest {
     public void findMaxIntegerAtThirdPos() {
         FindMaximumValue maximumValue = new FindMaximumValue(100, 70, 300);
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
         int expectedValue = 300;
         assertEquals(expectedValue, actualValue, "The maximum value is not correct! The Expected Value is " + expectedValue );
     }
@@ -35,6 +38,7 @@ class FindMaximumValueTest {
     public void findMaxFloatAtFirstPos() {
         FindMaximumValue maximumValue = new FindMaximumValue(100.4f, 70.4f, 30.4f);
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
         Float expectedValue = 100.4f;
         assertEquals(expectedValue, actualValue, "The maximum value is not correct! The Expected Value is " + expectedValue );
     }
@@ -44,6 +48,7 @@ class FindMaximumValueTest {
     public void findMaxFloatAtSecondPos() {
         FindMaximumValue maximumValue = new FindMaximumValue(100.4f, 700.4f, 30.4f);
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
         Float expectedValue = 700.4f;
         assertEquals(expectedValue, actualValue, "The maximum value is not correct! The Expected Value is " + expectedValue );
     }
@@ -52,6 +57,7 @@ class FindMaximumValueTest {
     public void findMaxFloatAtThirdPos() {
         FindMaximumValue maximumValue = new FindMaximumValue(100.4f, 70.4f, 300.4f);
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
         Float expectedValue = 300.4f;
         assertEquals(expectedValue, actualValue, "The maximum value is not correct! The Expected Value is " + expectedValue );
     }
@@ -60,6 +66,7 @@ class FindMaximumValueTest {
     public void findMaxStringAtFirstPos() {
         FindMaximumValue maximumValue = new FindMaximumValue("Peach","Apple", "Banana");
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
         String expectedValue = "Peach";
         assertEquals(expectedValue, actualValue, "The maximum value is not correct! The Expected Value is " + expectedValue );
     }
@@ -68,6 +75,7 @@ class FindMaximumValueTest {
     public void findMaxStringAtSecondPos() {
         FindMaximumValue maximumValue = new FindMaximumValue("Apple","Peach" ,"Banana");
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
         String expectedValue = "Peach";
         assertEquals(expectedValue, actualValue, "The maximum value is not correct! The Expected Value is " + expectedValue );
     }
@@ -76,6 +84,7 @@ class FindMaximumValueTest {
     public void findMaxStringAtThirdPos() {
         FindMaximumValue maximumValue = new FindMaximumValue("Apple","Banana" ,"Peach");
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
         String expectedValue = "Peach";
         assertEquals(expectedValue, actualValue, "The maximum value is not correct! The Expected Value is " + expectedValue );
     }
