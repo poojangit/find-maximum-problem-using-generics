@@ -1,24 +1,22 @@
 package com.bridgelabz.testmaximum;
-
+import java.util.Optional;
 public class FindMaximumValue<E extends Comparable>  {
-    E a,b,c;
-    public FindMaximumValue(E a, E b, E c) {
+    E[] a;
+    public FindMaximumValue(E... a) {
         this.a = a;
-        this.b = b;
-        this.c = c;
     }
     //Method to internally call the static findMaximum method passing the 3 instance variables
     public E testMaximum(){
-        return findMaximum(a,b,c);
+        return findMaximum(a);
     }
 
     // Method to find the maximum value
-    public static <E extends Comparable> E findMaximum(E a, E b, E c){
-        E max=a;
-        if(max.compareTo(b)<0)
-            max=b;
-        if(max.compareTo(c)<0)
-            max=c;
+    public static <E extends Comparable> E findMaximum(E... a){
+        E max=a[0];
+        for(int i=1;i<a.length;i++){
+            if(a[i].compareTo(max)>0)
+                max=a[i];
+        }
         return max;
     }
 }
